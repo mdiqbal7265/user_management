@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Ubuntu:wght@700&display=swap');
+
+*{
+	font-family: 'Maven Pro', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+.admin-login{
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.admin-nav{
+	width: 220px;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: #343a40;
+	transition: 0.3s all ease-in-out;
+}
+
+.admin-link{
+	background-color: #343a40;
+}
+.admin-link:hover, .nav-active{
+	background-color: #212529;
+	text-decoration: none;
+}
+
+.animate{
+	width: 0;
+	transition: 0.3s all ease-in-out;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
